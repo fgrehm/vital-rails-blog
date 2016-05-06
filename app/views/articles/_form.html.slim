@@ -13,8 +13,9 @@
     = f.label :body
     = f.text_area :body
   .field
-    = f.label :published
-    = f.check_box :published
+    = f.label :published do
+      = f.check_box :published
+      | Published
   .field
     = f.label :author
     = f.collection_select :author_id, Author.all, :id, :name, prompt: true
