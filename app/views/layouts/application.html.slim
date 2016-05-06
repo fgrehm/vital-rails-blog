@@ -26,6 +26,11 @@ html
             li = link_to 'Articles', articles_path, class: ((request.path == '/' || request.path =~ /^\/articles/) && 'active')
             li = link_to 'Authors', authors_path, class: (request.path =~ /^\/authors/ && 'active')
     .contents
+      - if notice
+        .row.notice
+          .section
+            p = notice
+
       = yield
     .row.footer.center
       .section
