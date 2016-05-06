@@ -19,4 +19,5 @@
   .field
     = f.label :author
     = f.collection_select :author_id, Author.all, :id, :name, prompt: true
-  .actions = f.submit
+  p
+    .actions = f.submit
