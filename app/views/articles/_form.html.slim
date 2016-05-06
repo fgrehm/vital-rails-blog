@@ -16,6 +16,6 @@
     = f.label :published
     = f.check_box :published
   .field
-    = f.label :author_id
-    = f.number_field :author_id
+    = f.label :author
+    = f.collection_select :author_id, Author.all, :id, :name, prompt: true
   .actions = f.submit
