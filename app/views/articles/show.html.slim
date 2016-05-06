@@ -1,18 +1,20 @@
-p#notice = notice
+.row
+  .section
+    p#notice = notice
 
-p
-  strong Title:
-  = @article.title
-p
-  strong Body:
-  = @article.body
-p
-  strong Published:
-  = @article.published
-p
-  strong Author:
-  = @article.author_id
+    p
+      strong Title:
+      = @article.title
+    p
+      strong Body:
+      = @article.body
+    p
+      strong Published:
+      = @article.published
+    p
+      strong Author:
+      = @article.author_id
 
-= link_to 'Edit', edit_article_path(@article)
-'|
-= link_to 'Back', articles_path
+    = link_to 'Edit', edit_article_path(@article)
+    '|
+    = link_to 'Back', articles_path

@@ -1,9 +1,11 @@
-p#notice = notice
+.row
+  .section
+    p#notice = notice
 
-p
-  strong Name:
-  = @author.name
+    p
+      strong Name:
+      = @author.name
 
-= link_to 'Edit', edit_author_path(@author)
-'|
-= link_to 'Back', authors_path
+    = link_to 'Edit', edit_author_path(@author)
+    '|
+    = link_to 'Back', authors_path

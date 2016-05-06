@@ -1,21 +1,23 @@
-h1 Listing authors
+.row
+  .section
+    h1 Listing authors
 
-table
-  thead
-    tr
-      th Name
-      th
-      th
-      th
+    table
+      thead
+        tr
+          th Name
+          th
+          th
+          th
 
-  tbody
-    - @authors.each do |author|
-      tr
-        td = author.name
-        td = link_to 'Show', author
-        td = link_to 'Edit', edit_author_path(author)
-        td = link_to 'Destroy', author, data: {:confirm => 'Are you sure?'}, :method => :delete
+      tbody
+        - @authors.each do |author|
+          tr
+            td = author.name
+            td = link_to 'Show', author
+            td = link_to 'Edit', edit_author_path(author)
+            td = link_to 'Destroy', author, data: {:confirm => 'Are you sure?'}, :method => :delete
 
-br
+    br
 
-= link_to 'New Author', new_author_path
+    = link_to 'New Author', new_author_path
