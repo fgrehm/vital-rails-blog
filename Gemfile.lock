@@ -1,10 +1,3 @@
-GIT
-  remote: git://github.com/doximity/vital.git
-  revision: f41c7f0d564a985de058e52857a7b88ff96cd71c
-  specs:
-    vital (1.2.0)
-      sass (>= 3.4)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -149,6 +142,8 @@ GEM
     unicorn-rails (2.2.0)
       rack
       unicorn
+    vital (1.2.0)
+      sass (>= 3.4)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -170,7 +165,7 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   unicorn-rails
-  vital!
+  vital
   web-console (~> 2.0)
 
 RUBY VERSION

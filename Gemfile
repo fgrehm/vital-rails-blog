@@ -9,7 +9,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'slim-rails'
-gem 'vital', github: 'doximity/vital'
+gem 'vital'
 
 gem 'jquery-rails'
 gem 'turbolinks'
